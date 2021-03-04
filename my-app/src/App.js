@@ -3,7 +3,7 @@ import history from "./services/history";
 
 // import { useEffect } from "react";
 
-import SignUp from './components/SignUp'
+import Header from './components/Header'
 
 
 import React from "react";
@@ -15,7 +15,7 @@ import Routes from "./routes";
 function App() {
   return (
     <div id="app">
-      <SignUp />
+      <Header />
       <main>
         <Router history={history}>
           <Routes />
