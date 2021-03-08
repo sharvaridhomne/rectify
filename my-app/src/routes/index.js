@@ -5,7 +5,7 @@ import SignUp from "../pages/SignUp";
 export default function Routes() {
   return (
     <Switch>
-      <Route path="/signup" exact component={SignUp} />
+      <Route path="/register" exact component={SignUp} />
     </Switch>
   );
 }

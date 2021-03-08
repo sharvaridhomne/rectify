@@ -1,6 +1,7 @@
 import { Switch } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
+import StickyFooter from "./components/StickyFooter";
 import Routes from "./routes";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Switch>
         <Routes />
       </Switch>
+      <StickyFooter />
     </div>
   );
 }
