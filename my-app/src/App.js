@@ -1,29 +1,12 @@
 
-import history from "./services/history";
-
-// import { useEffect } from "react";
-
-import Header from './components/Header'
-
-
-import React from "react";
-import { Router } from "react-router-dom";
-
-import Routes from "./routes";
-
+import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div id="app">
-      <Header />
-      <main>
-        <Router history={history}>
-          <Routes />
-        </Router>
-      </main>
-     
+    <div className="App">
+      <Header/>
     </div>
   );
 }
-
 export default App;
