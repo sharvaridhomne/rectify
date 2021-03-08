@@ -154,7 +154,7 @@ const useStyles = makeStyles(() => ({
 const headersData = [
   {
     label: "Home",
-    href: "/signup",
+    href: "/register",
   },
   {
     label: "Credit Repair Services",
