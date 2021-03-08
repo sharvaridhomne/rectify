@@ -74,7 +74,7 @@ export default function Header() {
 
   const femmecubatorLogo = (
     <Typography variant="h6" component="h1" className={logo}>
-      RECTIFY
+      RECTIFY CREDIT
     </Typography>
   );
 
@@ -154,7 +154,7 @@ const useStyles = makeStyles(() => ({
 const headersData = [
   {
     label: "Home",
-    href: "/home",
+    href: "/signup",
   },
   {
     label: "Credit Repair Services",
