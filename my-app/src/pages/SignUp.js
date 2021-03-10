@@ -16,6 +16,13 @@ import { withStyles } from "@material-ui/core/styles";
 import home from "../images/Home.PNG";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
+import Divider from "@material-ui/core/Divider";
+
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+
+import CardContent from "@material-ui/core/CardContent";
+
 // function Copyright() {
 //   return (
 //     <Typography variant="body2" color="textSecondary" align="center">
@@ -47,6 +54,22 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "3em",
     },
   },
+  root: {
+    // display: "flex",
+    position: "center",
+    justifyContent: "center",
+    alignItems: "center",
+
+    fontSize: "4rem",
+    [theme.breakpoints.down("sm")]: {
+      height: 300,
+      fontSize: "4rem",
+    },
+    // maxWidth: "80%",
+  },
+  media: {
+    height: 200,
+  },
 
   paper: {
     marginTop: theme.spacing(8),
@@ -66,6 +89,11 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(3, 0, 2),
   },
 }));
+const WhiteTextTypography = withStyles({
+  root: {
+    color: "#2196f3",
+  },
+})(Typography);
 
 export default function SignUp() {
   const classes = useStyles();
@@ -78,6 +106,46 @@ export default function SignUp() {
         </Box>
         {/* <Box>reliable experts in rebuilding your Credit Score </Box> */}
       </Box>
+
+      {/* <div
+        component="main"
+        maxWidth="md"
+        style={{ backgroundColor: "#cfe8fc" }}
+      > */}
+      <Container>
+        <Card className={classes.root}>
+          <CardActionArea>
+            {/* <CardMedia
+              className={classes.media}
+              image="/static/images/cards/contemplative-reptile.jpg"
+              title="Contemplative Reptile"
+            /> */}
+            <CardContent>
+              <WhiteTextTypography
+                variant="h3"
+                align="center"
+                className={classes.blogTitle}
+                gutterBottom
+              >
+                You Want to Know?
+              </WhiteTextTypography>
+              <Typography variant="body2" color="black" component="p">
+                Why your loans are getting Rejected? Why your credit card got
+                Declined? Can you apply for a housing loan? Will you get an Auto
+                loan? How and where to apply for CIBIL Report (or for Experian /
+                Equifax/ Criff Highmark)?
+              </Typography>
+
+              <Typography variant="body2" color="black" component="p">
+                Any other queries regarding your Credit score? Register at our
+                web site for these questions and many more like CIBIL, Credit
+                Scores, Credit Report, Credit Building, Credit planning and
+                Credit protection.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Container>
 
       <Container component="main" maxWidth="md">
         <CssBaseline />
@@ -227,6 +295,7 @@ export default function SignUp() {
         <Copyright />
       </Box> */}
       </Container>
+      {/* </div> */}
     </div>
   );
 }
