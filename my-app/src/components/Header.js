@@ -13,8 +13,45 @@ import { makeStyles } from "@material-ui/core";
 import { Link as RouterLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
+// import logo from "../images/logo.png"
+
+
+const useStyles = makeStyles((theme) => ({
+  header: {
+    backgroundColor: "#1a237e",
+    paddingRight: "79px",
+    paddingLeft: "118px",
+    "@media (max-width: 900px)": {
+      paddingLeft: 0,
+    },
+  },
+  // logo: {
+  //   fontFamily: "Work Sans, sans-serif",
+  //   fontWeight: 600,
+  //   color: "#FFFEFE",
+  //   textAlign: "left",
+    
+  // },
+  logo: {
+    image: 'url(http://www.rectifycredit.com/images/logo.png)'},
+  menuButton: {
+    fontFamily: "Open Sans, sans-serif",
+    fontWeight: 700,
+    size: "18px",
+    marginLeft: "38px",
+  },
+  toolbar: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  drawerContainer: {
+    padding: "20px 30px",
+  },
+}));
 
 export default function Header() {
+  const classes = useStyles();
+
   const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false,
@@ -73,9 +110,13 @@ export default function Header() {
   };
 
   const femmecubatorLogo = (
-    <Typography variant="h6" component="h1" className={logo}>
-      RECTIFY CREDIT
+    <Typography variant="h6" component="h1"  className={classes.image}  >
+RECTIFY CREDIT
     </Typography>
+    // <Typography variant="h6" component="h1"   >
+    //  RECTIFY CREDIT
+    // </Typography>
+    
   );
 
   const getMenuButtons = () => {
@@ -114,42 +155,14 @@ export default function Header() {
   };
   return (
     <header>
-      <AppBar className={header}>
+      <AppBar className={header} >
         {mobileView ? displayMobile() : displayDesktop()}
+        
       </AppBar>
     </header>
   );
 }
 
-const useStyles = makeStyles(() => ({
-  header: {
-    backgroundColor: "#400CCC",
-    paddingRight: "79px",
-    paddingLeft: "118px",
-    "@media (max-width: 900px)": {
-      paddingLeft: 0,
-    },
-  },
-  logo: {
-    fontFamily: "Work Sans, sans-serif",
-    fontWeight: 600,
-    color: "#FFFEFE",
-    textAlign: "left",
-  },
-  menuButton: {
-    fontFamily: "Open Sans, sans-serif",
-    fontWeight: 700,
-    size: "18px",
-    marginLeft: "38px",
-  },
-  toolbar: {
-    display: "flex",
-    justifyContent: "space-between",
-  },
-  drawerContainer: {
-    padding: "20px 30px",
-  },
-}));
 
 const headersData = [
   {
