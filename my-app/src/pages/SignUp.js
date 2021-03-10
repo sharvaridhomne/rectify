@@ -12,6 +12,9 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import { withStyles } from "@material-ui/core/styles";
+import home from "../images/Home.PNG";
+import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
 // function Copyright() {
 //   return (
@@ -27,6 +30,24 @@ import Container from "@material-ui/core/Container";
 // }
 
 const useStyles = makeStyles((theme) => ({
+  hero: {
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ0TTV44zm-NVhEDyFKopLLAsqg5dxkr451A&usqp=CAU')`,
+    height: "500px",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    position: "relative",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    color: "#fff",
+    fontSize: "3rem",
+    [theme.breakpoints.down("sm")]: {
+      height: 300,
+      fontSize: "3em",
+    },
+  },
+
   paper: {
     marginTop: theme.spacing(8),
     display: "flex",
@@ -51,8 +72,16 @@ export default function SignUp() {
 
   return (
     <div>
-      <Container component="main" maxWidth="xs">
+      <Box className={classes.hero}>
+        <Box>
+          Rectify Credit reliable experts in rebuilding your Credit Score
+        </Box>
+        {/* <Box>reliable experts in rebuilding your Credit Score </Box> */}
+      </Box>
+
+      <Container component="main" maxWidth="md">
         <CssBaseline />
+
         <div className={classes.paper}>
           <Avatar className={classes.avatar}>
             <LockOutlinedIcon />
