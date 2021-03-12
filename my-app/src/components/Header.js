@@ -7,33 +7,33 @@ import {
   Drawer,
   Link,
   MenuItem,
+  Grid,
 } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from "@material-ui/core";
 import { Link as RouterLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
-// import logo from "../images/logo.png"
-
+import rectify from "../images/logo.jpg";
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    backgroundColor: "#1a237e",
+    appbar: {
+      background: "none",
+    },
     paddingRight: "79px",
     paddingLeft: "118px",
     "@media (max-width: 900px)": {
       paddingLeft: 0,
     },
   },
-  // logo: {
-  //   fontFamily: "Work Sans, sans-serif",
-  //   fontWeight: 600,
-  //   color: "#FFFEFE",
-  //   textAlign: "left",
-    
-  // },
+
   logo: {
-    image: 'url(http://www.rectifycredit.com/images/logo.png)'},
+    fontFamily: "Work Sans, sans-serif",
+    fontWeight: 400,
+    color: "#FFFEFE",
+    textAlign: "left",
+  },
   menuButton: {
     fontFamily: "Open Sans, sans-serif",
     fontWeight: 700,
@@ -47,16 +47,41 @@ const useStyles = makeStyles((theme) => ({
   drawerContainer: {
     padding: "20px 30px",
   },
+  appBarSolid: {
+    backgroundColor: "rgba(67, 129, 168)",
+  },
+  appBarTransparent: {
+    backgroundColor: "rgba(67, 129, 168,0,5)",
+  },
 }));
 
 export default function Header() {
   const classes = useStyles();
+  const [navBackground, setNavBackground] = useState("appBarTransparent");
+
+  const navRef = React.useRef();
+  navRef.current = navBackground;
 
   const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false,
   });
   const { mobileView, drawerOpen } = state;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 310;
+      if (show) {
+        setNavBackground("appBarSolid");
+      } else {
+        setNavBackground("appbarTransparent");
+      }
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const setResponsiveness = () => {
@@ -72,7 +97,7 @@ export default function Header() {
   const displayDesktop = () => {
     return (
       <Toolbar className={toolbar}>
-        {femmecubatorLogo}
+        {RectifyLogo}
         <div>{getMenuButtons()}</div>
       </Toolbar>
     );
@@ -87,7 +112,7 @@ export default function Header() {
         <IconButton
           {...{
             edge: "start",
-            color: "inherit",
+            color: "white",
             "aria-label": "menu",
             "aria-haspopup": "true",
             onClick: handleDrawerOpen,
@@ -104,28 +129,25 @@ export default function Header() {
         >
           <div className={drawerContainer}>{getDrawerChoices()}</div>
         </Drawer>
-        <div>{femmecubatorLogo}</div>
+        <div>{RectifyLogo}</div>
       </Toolbar>
     );
   };
 
-  const femmecubatorLogo = (
-    <Typography variant="h6" component="h1"  className={classes.image}  >
-RECTIFY CREDIT
-    </Typography>
-    // <Typography variant="h6" component="h1"   >
-    //  RECTIFY CREDIT
-    // </Typography>
-    
+  const RectifyLogo = (
+    <Toolbar>
+      <img src={rectify} alt="RectifyLogo" className={classes.logo} />
+    </Toolbar>
   );
 
   const getMenuButtons = () => {
     return headersData.map(({ label, href }) => {
       return (
         <Button
+          style={{ color: "black" }}
           {...{
             key: label,
-            color: "inherit",
+
             to: href,
             component: RouterLink,
             className: menuButton,
@@ -143,8 +165,8 @@ RECTIFY CREDIT
           {...{
             component: RouterLink,
             to: href,
-            color: "inherit",
-            style: { textDecoration: "none" },
+            color: "white",
+            style: { textDecoration: "white" },
             key: label,
           }}
         >
@@ -155,19 +177,25 @@ RECTIFY CREDIT
   };
   return (
     <header>
-      <AppBar className={header} >
+      <AppBar
+        id="header"
+        className={classes.appBarTransparent}
+        style={{
+          backgroundColor: "rgba(255, 148, 120, 1)",
+          color: "black",
+          boxShadow: "0px 0px 0px 0px",
+        }}
+      >
         {mobileView ? displayMobile() : displayDesktop()}
-        
       </AppBar>
     </header>
   );
 }
 
-
 const headersData = [
   {
     label: "Home",
-    href: "/register",
+    href: "/",
   },
   {
     label: "Credit Repair Services",
