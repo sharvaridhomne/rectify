@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
   },
   colorText1: {
+    color: "black",
+  },
+  colorText2: {
     color: "#5AFF3D",
   },
   container: {
@@ -69,7 +72,6 @@ export default function () {
 
   return (
     <div className={classes.root} id="place-to-visit">
-    
       <br />
       <div className={classes.container}>
         <h1 className={classes.title}>
@@ -77,13 +79,28 @@ export default function () {
           <span className={classes.colorText1}> To Know?</span>
         </h1>
         <h1 className={classes.colorText}>
-          Why your loans are getting Rejected?
+          Why your{" "}
+          <span className={classes.colorText1}>
+            {" "}
+            loans aregetting Rejected?
+          </span>
           <br />
-          Why your credit card got Declined? <br /> Can you apply for a housing
-          loan? <br />
-          Will you get an Auto loan? <br />
-          How and where to apply for CIBIL Report (or for Experian / Equifax/
-          Criff Highmark)?
+          Why your{" "}
+          <span className={classes.colorText1}>
+            credit card got Declined?
+          </span>{" "}
+          <br /> Can you apply
+          <span className={classes.colorText1}> for a housing loan?</span>
+          <br />
+          Will you{" "}
+          <span className={classes.colorText1}>get an Auto loan? </span>
+          <br />
+          <span className={classes.colorText2}>
+            How and where to apply for CIBIL  Rep
+          </span>
+          <span className={classes.colorText1}>
+          ort (or for Experian / Equifax/ Criff Highmark)?
+          </span>
         </h1>
         <Button className={classes.root1} onClick={handleClickOpen}>
           Register Here

@@ -9,7 +9,7 @@ import PlaceToVisit1 from "../pages/PlaceToVisit1";
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: "100vh",
-    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/img4.jpg"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/img7.jpg"})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
   },
@@ -62,7 +62,7 @@ export default function Home() {
             <h1 className={classes.title}>
               Repair your Credit Score <br />and ensure your <br />
               <span className={classes.colorText}>Loan Eligiblity with<br/>
-               Rectify Credit in Optimal Time.</span>
+               Rectify Credit in </span><span className={classes.title}>Optimal Time.</span>
             </h1>
             <Scroll to="place-to-visit1" smooth={true}>
               <IconButton>

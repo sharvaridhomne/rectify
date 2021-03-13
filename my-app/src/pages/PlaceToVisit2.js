@@ -61,14 +61,15 @@ export default function PlaceToVisit2() {
           Just Click on the Question <br />
           <span className={classes.colorText1}>
             {" "}
-            To Scoll down to the answer..
+            To Scoll down to the answer..!
           </span>
         </h1>
         <br />
         <br />
         <br />
         <br />
-        <br />
+       
+
         <div className={classes.container}>
           <Container
             maxWidth="md"

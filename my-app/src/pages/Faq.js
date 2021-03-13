@@ -9,7 +9,7 @@ import PlaceToVisit2 from "../pages/PlaceToVisit2";
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: "100vh",
-    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/img4.jpg"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/faq.jpg"})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
   },
@@ -74,6 +74,10 @@ export default function Home() {
             <br />
             <br />
             <br />
+        <br />
+        <br />
+        <br />
+
 
 
           </div>
