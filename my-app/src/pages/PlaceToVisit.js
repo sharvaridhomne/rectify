@@ -69,10 +69,7 @@ export default function () {
 
   return (
     <div className={classes.root} id="place-to-visit">
-      {/* <h1 className={classes.title}>
-        You Want To Know? <br />
-        <span className={classes.colorText}></span>
-      </h1> */}
+    
       <br />
       <div className={classes.container}>
         <h1 className={classes.title}>

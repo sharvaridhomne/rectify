@@ -6,9 +6,7 @@ import CreditEducation from "../pages/CreditEducation";
 import Contactus from "../pages/ContactUs";
 import Faq from "../pages/Faq";
 import Home from "../pages/Home";
-import ImageCard from "../pages/ImageCard";
-import PlaceToVisit from "../pages/PlaceToVisit";
-import useWindowPosition from "../Hooks/useWindowPosition";
+
 
 
 
