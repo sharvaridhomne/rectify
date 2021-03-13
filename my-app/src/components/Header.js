@@ -1,13 +1,11 @@
 import {
   AppBar,
   Toolbar,
-  Typography,
   Button,
   IconButton,
   Drawer,
   Link,
   MenuItem,
-  Grid,
 } from "@material-ui/core";
 import React from "react";
 import { makeStyles } from "@material-ui/core";
@@ -35,6 +33,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
   },
   menuButton: {
+    "&:hover": {
+      backgroundColor: 'rgb(7, 177, 77, 0.42)'},
     fontFamily: "Open Sans, sans-serif",
     fontWeight: 700,
     size: "18px",
@@ -53,9 +53,10 @@ const useStyles = makeStyles((theme) => ({
   appBarTransparent: {
     backgroundColor: "rgba(67, 129, 168,0,5)",
   },
+ 
 }));
 
-export default function Header() {
+export default function Header(props) {
   const classes = useStyles();
   const [navBackground, setNavBackground] = useState("appBarTransparent");
 
@@ -92,7 +93,7 @@ export default function Header() {
     setResponsiveness();
     window.addEventListener("resize", () => setResponsiveness());
   }, []);
-  const { header, logo, menuButton, toolbar, drawerContainer } = useStyles();
+  const { header, menuButton, toolbar, drawerContainer } = useStyles();
 
   const displayDesktop = () => {
     return (
@@ -144,6 +145,7 @@ export default function Header() {
     return headersData.map(({ label, href }) => {
       return (
         <Button
+          
           style={{ color: "black" }}
           {...{
             key: label,
@@ -151,6 +153,7 @@ export default function Header() {
             to: href,
             component: RouterLink,
             className: menuButton,
+           
           }}
         >
           {label}
@@ -181,7 +184,8 @@ export default function Header() {
         id="header"
         className={classes.appBarTransparent}
         style={{
-          backgroundColor: "rgba(255, 148, 120, 1)",
+          backgroundColor: "rgba(200, 247, 197, 1)",
+          //backgroundColor: "transparent",
           color: "black",
           boxShadow: "0px 0px 0px 0px",
         }}
