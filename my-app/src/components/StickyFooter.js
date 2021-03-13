@@ -19,16 +19,17 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
-  // root: {
-  //   display: 'flex',
-  //   flexDirection: 'column',
-  //   minHeight: '100vh',
-  // },
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    // minHeight: '100vh',
+  },
   main: {
     marginTop: theme.spacing(8),
     marginBottom: theme.spacing(2),
   },
   footer: {
+    textAlign: "center",
     padding: theme.spacing(3, 2),
     marginTop: 'auto',
     backgroundColor:
@@ -56,6 +57,7 @@ export default function StickyFooter() {
         <Container maxWidth="sm">
           <Typography variant="body1"></Typography>
           <Copyright />
+          
         </Container>
       </footer>
     </div>
