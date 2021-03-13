@@ -36,10 +36,11 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
   },
   colorText1: {
-    color: "black",
+    // backgroundColor: "rgba(228, 120, 51, 1)",
+    color: "rgba(236, 236, 236, 1)"
   },
   colorText2: {
-    color: "#5AFF3D",
+    color: "rgba(242, 120, 75, 1)",
   },
   container: {
     textAlign: "center",
@@ -76,9 +77,9 @@ export default function () {
       <div className={classes.container}>
         <h1 className={classes.title}>
           You Want
-          <span className={classes.colorText1}> To Know?</span>
+          <span className={classes.colorText2}> To Know?</span>
         </h1>
-        <h1 className={classes.colorText}>
+        <h1 className={classes.colorText2}>
           Why your{" "}
           <span className={classes.colorText1}>
             {" "}

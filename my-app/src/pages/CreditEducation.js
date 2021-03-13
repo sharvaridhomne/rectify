@@ -1,67 +1,77 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import img1 from "../images/img1.jpg";
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography'
-import Toolbar from '@material-ui/core/Toolbar';
-import Container from '@material-ui/core/Container';
-import { withStyles } from "@material-ui/core/styles";
+import React, { useEffect, useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { CssBaseline, IconButton, Collapse } from "@material-ui/core";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Link as Scroll } from "react-scroll";
 
+import PlaceToVisit3 from "../pages/PlaceToVisit3";
 
 const useStyles = makeStyles((theme) => ({
-    hero: {
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${img1})`,
-      height: "500px",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-      position: "relative",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "#fff",
-      fontSize: "4rem",
-      [theme.breakpoints.down("sm")]: {
-        height: 300,
-        fontSize: "3em"
-      }
-    }
-  }));
+  root: {
+    minHeight: "100vh",
+    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/img8.jpg"})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  },
+  // spacing: 4,
+  colorText: {
+    color: "#5AFF3D",
+  },
+  container: {
+    textAlign: "center",
+  },
+  title: {
+    color: "#fff",
+    fontSize: "4.5rem",
+  },
+  goDown: {
+    color: "#5AFF3D",
+    fontSize: "4rem",
+  },
+  cardimage: {
+    maxWidth: 345,
+  },
+}));
+export default function Home() {
+  const classes = useStyles();
+  const [checked, setChecked] = useState(false);
+  useEffect(() => {
+    setChecked(true);
+  }, []);
+  return (
+    <div>
+      <div className={classes.root}>
+        <CssBaseline />
+        <Collapse
+          in={checked}
+          {...(checked ? { timeout: 1000 } : {})}
+          collapsedHeight={50}
+        >
+          <div className={classes.container}>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
 
-const WhiteTextTypography = withStyles({
-    root: {
-    color: "green"
-    }
-})(Typography);
-
-
-
-export default function CreditEducation() {
-    const classes = useStyles();
-  
-    return (
-      <div className="App">
-        
-        <Box className={classes.hero}>
-          {/* <Box>Rectify credit</Box> */}
-        </Box>
-        <Container maxWidth="md">
-            <Toolbar>
-              <Typography variant="body1" color="inherit"> .</Typography>
-            </Toolbar>
-        </Container>
-
-        <Container maxWidth="lg" className={classes.blogsContainer}>
-        <Typography variant="h3" align="center" className={classes.blogTitle} gutterBottom>
-        Credit Education
-        </Typography>
-        <WhiteTextTypography variant="h3" align="center" className={classes.blogTitle} gutterBottom>
-        Coming Soon...
-        </WhiteTextTypography>
-        </Container>
+            <h1 className={classes.title}>
+             Credit <br />
+              <span className={classes.colorText}>Education</span>
+            </h1>
+            <Scroll to="place-to-visit3" smooth={true}>
+              <IconButton>
+                <ExpandMoreIcon className={classes.goDown} />
+              </IconButton>
+            </Scroll>
+          </div>
+        </Collapse>
+        <PlaceToVisit3 />
       </div>
-    );
+    </div>
+  );
 }
-
-
