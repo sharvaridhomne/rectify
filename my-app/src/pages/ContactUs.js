@@ -80,7 +80,7 @@ export default function Contactus() {
             Contact No 
         </Typography>
         <Typography component="h5" align="center" color="textSecondary" component="p">
-        022 -27781302     /+91-8082-554356 /57/58
+          +91-8082-554356 /57/58/59
         </Typography>
       </Container>
       <Typography component="h3" variant="h5">

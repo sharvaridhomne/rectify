@@ -6,12 +6,7 @@ import CreditEducation from "../pages/CreditEducation";
 import Contactus from "../pages/ContactUs";
 import Faq from "../pages/Faq";
 import Home from "../pages/Home";
-
-
-
-
-
-
+import FinancialCalculator from "../pages/FinancialCalculator";
 
 export default function Routes() {
   return (
@@ -25,11 +20,11 @@ export default function Routes() {
       <Route path="/crediteducation" exact component={CreditEducation} />
       <Route path="/contactus" exact component={Contactus} />
       <Route path="/faq" exact component={Faq} />
-      
-
-
-
-
+      <Route
+        path="/financialcalculator"
+        excat
+        component={FinancialCalculator}
+      />
     </Switch>
   );
 }

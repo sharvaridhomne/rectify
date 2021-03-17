@@ -97,10 +97,10 @@ export default function () {
           <span className={classes.colorText1}>get an Auto loan? </span>
           <br />
           <span className={classes.colorText2}>
-            How and where to apply for CIBIL  Rep
+            How and where to apply for CIBIL  Report 
           </span>
           <span className={classes.colorText1}>
-          ort (or for Experian / Equifax/ Criff Highmark)?
+         (or for Experian / Equifax/ Criff Highmark)?
           </span>
         </h1>
         <Button className={classes.root1} onClick={handleClickOpen}>

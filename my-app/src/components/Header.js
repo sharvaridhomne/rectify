@@ -202,7 +202,7 @@ const headersData = [
     href: "/",
   },
   {
-    label: "Credit Repair Services",
+    label: "Our Services",
     href: "/creditrepairservices",
   },
   {

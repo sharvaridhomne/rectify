@@ -4,35 +4,34 @@ import { CssBaseline, IconButton, Collapse } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link as Scroll } from "react-scroll";
 
-import PlaceToVisit3 from "../pages/PlaceToVisit3";
+import PlaceToVisit4 from "./PlaceToVisit4";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: "100vh",
-    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/bg3.jpg"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/img10.jpg"})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
   },
   // spacing: 4,
   colorText: {
     color: "#5AFF3D",
+    fontSize: "3.5rem"
   },
   container: {
     textAlign: "center",
   },
   title: {
     color: "#fff",
-    fontSize: "4.5rem",
+    fontSize: "3.5rem",
   },
   goDown: {
     color: "#5AFF3D",
     fontSize: "4rem",
   },
-  cardimage: {
-    maxWidth: 345,
-  },
+ 
 }));
-export default function Home() {
+export default function FinancialCalculator() {
   const classes = useStyles();
   const [checked, setChecked] = useState(false);
   useEffect(() => {
@@ -59,18 +58,31 @@ export default function Home() {
             <br />
             <br />
 
-            <h1 className={classes.title}>
-             Credit <br />
-              <span className={classes.colorText}>Education</span>
+            <h1 className={classes.colorText}>
+              Financial <br />
+              <span className={classes.colorText}>Calculator</span>
             </h1>
-            <Scroll to="place-to-visit3" smooth={true}>
+            <Scroll to="place-to-visit2" smooth={true}>
               <IconButton>
                 <ExpandMoreIcon className={classes.goDown} />
               </IconButton>
             </Scroll>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        <br />
+        <br />
+        <br />
+
+
+
           </div>
         </Collapse>
-        <PlaceToVisit3 />
+        <PlaceToVisit4 />
       </div>
     </div>
   );

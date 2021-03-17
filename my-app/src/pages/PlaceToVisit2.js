@@ -73,9 +73,9 @@ export default function PlaceToVisit2() {
         <div className={classes.container}>
           <Container
             maxWidth="md"
-            style={{
-              backgroundColor: "transparent",
-            }}
+            // style={{
+            //   backgroundColor: "transparent",
+            // }}
           >
             <Accordion
               style={{
@@ -95,50 +95,50 @@ export default function PlaceToVisit2() {
                 <List component="nav" aria-label="secondary mailbox folders">
                   <ListItem>
                     <ListItemText
-                      color="textSecondary"
+                      color="textwhite"
                       primary="With RectifyCredit you get your Credit on track with Simple Steps:"
                     />
                   </ListItem>
                   <ListItem>
                     <ListItemText
-                      color="textSecondary"
-                      secondary="Just register yourself on our web Site RectifyCredit.com"
+                      color="white"
+                      primary="Just register yourself on our web Site RectifyCredit.com"
                     />
                   </ListItem>
                   <ListItem>
                     <ListItemText
-                      color="textSecondary"
-                      secondary="Send your personal Credit report to us on:   info@rectifycredit.com"
+                      color="white"
+                      primary="Send your personal Credit report to us on:   info@rectifycredit.com"
                     />
                   </ListItem>
                   <ListItem>
                     <ListItemText
-                      color="textSecondary"
-                      secondary="Call your RectifyCredit advisor on 8082554356/57/58/59"
+                      color="white"
+                      primary="Call your RectifyCredit advisor on 8082554356/57/58/59"
                     />
                   </ListItem>
                   <ListItem>
                     <ListItemText
-                      color="textSecondary"
-                      secondary="RectifyCredit Advisors will read you CIBIL report and help you resolving CIBIL issues."
+                      color="white"
+                      primary="RectifyCredit Advisors will read you CIBIL report and help you resolving CIBIL issues."
                     />
                   </ListItem>
                   <ListItem>
                     <ListItemText
-                      color="textSecondary"
-                      secondary="RectifyCredit Avisors will handhold you through the credit Report Restoration process."
+                      color="white"
+                      primary="RectifyCredit Avisors will handhold you through the credit Report Restoration process."
                     />
                   </ListItem>
                   <ListItem>
                     <ListItemText
-                      color="textSecondary"
-                      secondary="Once your CIBIL Report is repaired you can confidently apply for any loan from any Bank."
+                      color="white"
+                      primary="Once your CIBIL Report is repaired you can confidently apply for any loan from any Bank."
                     />
                   </ListItem>
                   <ListItem>
                     <ListItemText
-                      color="textSecondary"
-                      secondary="Just register yourself on our web Site RectifyCredit.com"
+                      color="textwhite"
+                      primary="Just register yourself on our web Site RectifyCredit.com"
                     />
                   </ListItem>
                 </List>
@@ -187,7 +187,7 @@ export default function PlaceToVisit2() {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography color="textSecondary">
+                <Typography>
                   Our basic fees start from Rs 5000 ( plus taxes as applicable).
                   We charge in advance. These fees are normally based on the
                   effort and support that is needed to assist you to achieve the
@@ -231,7 +231,7 @@ export default function PlaceToVisit2() {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography color="textSecondary">
+                <Typography >
                   The entire process of interaction is generally slow and can
                   take time in months typically 2-3 months. The time taken can
                   be less if the issues are simpler in nature then may be couple
@@ -277,7 +277,7 @@ export default function PlaceToVisit2() {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography color="textSecondary">
+                <Typography >
                   Once you receive the report, you could email us the report to:
                   <Link
                     href="https://reports@rectifycredit.com"
@@ -323,7 +323,7 @@ export default function PlaceToVisit2() {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography color="textSecondary">
+                <Typography >
                   We respect our customers privacy and do not share your
                   information with any one unless you direct us to do so in
                   writing.
