@@ -7,6 +7,8 @@ import Contactus from "../pages/ContactUs";
 import Faq from "../pages/Faq";
 import Home from "../pages/Home";
 import FinancialCalculator from "../pages/FinancialCalculator";
+import Calci from "../pages/Calci";
+
 
 export default function Routes() {
   return (
@@ -24,6 +26,12 @@ export default function Routes() {
         path="/financialcalculator"
         excat
         component={FinancialCalculator}
+      />
+       <Route path="/faq" exact component={Faq} />
+      <Route
+        path="/calci"
+        excat
+        component={Calci}
       />
     </Switch>
   );
