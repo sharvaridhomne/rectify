@@ -14,7 +14,7 @@ const backgroundShape = require("../images/shape.svg");
 const styles = (theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.grey["100"],
+    backgroundColor: "#f1f8e9",
     overflow: "hidden",
     background: `url(${backgroundShape}) no-repeat`,
     backgroundSize: "cover",

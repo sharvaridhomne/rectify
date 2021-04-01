@@ -34,7 +34,8 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     "&:hover": {
-      backgroundColor: 'rgb(7, 177, 77, 0.42)'},
+      backgroundColor: "rgb(7, 177, 77, 0.42)",
+    },
     fontFamily: "Open Sans, sans-serif",
     fontWeight: 700,
     size: "18px",
@@ -53,7 +54,6 @@ const useStyles = makeStyles((theme) => ({
   appBarTransparent: {
     backgroundColor: "rgba(67, 129, 168,0,5)",
   },
- 
 }));
 
 export default function Header(props) {
@@ -145,7 +145,6 @@ export default function Header(props) {
     return headersData.map(({ label, href }) => {
       return (
         <Button
-          
           style={{ color: "black" }}
           {...{
             key: label,
@@ -153,7 +152,6 @@ export default function Header(props) {
             to: href,
             component: RouterLink,
             className: menuButton,
-           
           }}
         >
           {label}
@@ -185,6 +183,7 @@ export default function Header(props) {
         className={classes.appBarTransparent}
         style={{
           backgroundColor: "rgba(200, 247, 197, 1)",
+
           //backgroundColor: "transparent",
           color: "black",
           boxShadow: "0px 0px 0px 0px",

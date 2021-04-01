@@ -78,7 +78,7 @@ class DisplayResult extends React.Component {
                       Monthly Payments
                     </Typography>
                     <Typography variant="h5" color={"secondary"} gutterBottom>
-                      {numeral(monthlyPayment).format()} USD
+                      {numeral(monthlyPayment).format()} Rs
                     </Typography>
                   </div>
                   <div className={classes.mainBadge}>
@@ -96,7 +96,7 @@ class DisplayResult extends React.Component {
                       Total
                     </Typography>
                     <Typography variant="h5" color={"secondary"} gutterBottom>
-                      {numeral(total).format()} USD
+                      {numeral(total).format()} Rs
                     </Typography>
                   </div>
                   <div className={classes.mainBadge}>
@@ -108,7 +108,7 @@ class DisplayResult extends React.Component {
                       color={"secondary"}
                       gutterBottom
                     >
-                      {numeral(principalAmount).format()} USD
+                      {numeral(principalAmount).format()} Rs
                     </Typography>
                   </div>
                   <div className={classes.mainBadge}>
@@ -120,7 +120,7 @@ class DisplayResult extends React.Component {
                       color={"secondary"}
                       gutterBottom
                     >
-                      {numeral(interestAmount).format()} USD
+                      {numeral(interestAmount).format()} Rs
                     </Typography>
                   </div>
                   <div className={classes.mainBadge}>

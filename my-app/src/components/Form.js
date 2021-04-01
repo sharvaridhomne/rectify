@@ -161,7 +161,7 @@ class Form extends React.Component {
                                     </Typography>
                                     <div className={classes.blockCenter}>
                                         <Typography color='secondary' variant="h6" gutterBottom>
-                                            {numeral(amount).format()} USD
+                                            {numeral(amount).format()} Rs
                                         </Typography>
                                     </div>
                                     <div>
