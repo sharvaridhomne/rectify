@@ -311,7 +311,8 @@ export default function PlaceToVisit2() {
             <br />
             <br />
             <br />
-            <Button href="/calci" to="calci" smooth={true} variant="contained" color="secondary">
+            <Button href="/calci" to="calci" smooth={true} variant="contained" 
+              style= {{ background: 'linear-gradient(45deg, rgba(200, 247, 197, 1) 30%, #5AFF3D 90%)' }} >
               Calculate Here
             </Button>
           </Container>

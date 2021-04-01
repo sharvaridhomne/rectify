@@ -9,23 +9,23 @@ import PlaceToVisit2 from "../pages/PlaceToVisit2";
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: "100vh",
-    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/faq.jpg"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/faq1.jpeg"})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
   },
   // spacing: 4,
   colorText: {
-    color: "#5AFF3D",
+    color: "black",
   },
   container: {
     textAlign: "center",
   },
   title: {
-    color: "#fff",
+    color: "#33691e",
     fontSize: "3.5rem",
   },
   goDown: {
-    color: "#5AFF3D",
+    color: "black",
     fontSize: "4rem",
   },
  
@@ -58,10 +58,13 @@ export default function Home() {
             <br />
 
             <h1 className={classes.title}>
-              Rectify Credit works to<br />Repair,build,maintain <br />
-              <span className={classes.colorText}>and Protect<br/>
-               Your Credit Score.</span>
+              Rectify Credit works to<br />Repair,build<br />
+              
             </h1>
+            <h1>
+              <span > maintain and Protect<br/>
+               Your Credit Score.</span>
+              </h1>
             <Scroll to="place-to-visit2" smooth={true}>
               <IconButton>
                 <ExpandMoreIcon className={classes.goDown} />

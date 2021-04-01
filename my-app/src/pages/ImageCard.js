@@ -9,7 +9,7 @@ import { Collapse } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 500,
+    maxWidth: 600,
     background: "rgba(0,0,0,0.5)",
     margin: "20px",
   },
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   },
   desc: {
     fontFamily: "Nunito",
-    fontSize: "1.1rem",
+    fontSize: "1.4rem",
     color: "#ddd",
   },
 });
@@ -35,11 +35,11 @@ export default function ImageCard({ place, checked }) {
   return (
     <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
       <Card className={classes.root}>
-        <CardMedia
+        {/* <CardMedia
           className={classes.media}
           image={place.imageUrl}
           title="Contemplative Reptile"
-        />
+        /> */}
         <CardContent>
           <Typography
             gutterBottom
@@ -55,6 +55,7 @@ export default function ImageCard({ place, checked }) {
             component="p"
             className={classes.desc}
           >
+            
             {place.description}
           </Typography>
         </CardContent>

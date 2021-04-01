@@ -57,13 +57,13 @@ export default function PlaceToVisit2() {
   return (
     <div className={classes.root} id="place-to-visit2">
       <div className={classes.container}>
-        <h1 className={classes.title}>
+        {/* <h1 className={classes.title}>
           Just Click on the Question <br />
           <span className={classes.colorText1}>
             {" "}
             To Scoll down to the answer..!
           </span>
-        </h1>
+        </h1> */}
         <br />
         <br />
         <br />

@@ -8,12 +8,14 @@ const places = [
   },
   {
     title: "Credit repair services",
-    description:
+   
+    description: 
     `Credit repair services:Credit repair is an advisory service that we provide as a professional service to individuals and corporates. Understanding the report, analyzing it and offering a solution based on your requirement is our forte. So what do our credit repair services consist of?
     1. Identifying errors in your credit report.
     2. Disputing the incorrect information if any. It could be Personal Information or about Accounts that are updated.
     3. Getting updations done in the credit report 
-    4. Communicating with your lenders on your behalf Rectify Credit will work on your behalf to resolve the issues on your credit report.`,
+    4. Communicating with your lenders on your behalf Rectify Credit will work on your behalf to resolve the issues on your credit report.            `, 
+    
     imageUrl: process.env.PUBLIC_URL + "/assets/img3.jpg",
     time: 1500,
   },

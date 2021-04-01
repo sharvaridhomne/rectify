@@ -9,10 +9,12 @@ import PlaceToVisit4 from "./PlaceToVisit4";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    // display: "flex",
     minHeight: "100vh",
-    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/img10.jpg"})`,
+    // minwidth: "600vh",
+    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/home4.jpg"})`,
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    backgroundSize: "cover ",
   },
   // spacing: 4,
   colorText: {
@@ -59,7 +61,7 @@ export default function FinancialCalculator() {
             <br />
             <br />
 
-            <h1 className={classes.colorText}>
+            <h1 className={classes.title}>
               Financial <br />
               <span className={classes.colorText}>Calculator</span>
             </h1>
