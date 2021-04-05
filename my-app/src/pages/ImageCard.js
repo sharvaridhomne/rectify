@@ -10,22 +10,22 @@ import { Collapse } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
     maxWidth: 600,
-    background: "rgba(0,0,0,0.5)",
+    // background: "rgba(0,0,0,0.5)",
     margin: "20px",
   },
-  media: {
-    height: 440,
-  },
+  // media: {
+  //   height: 440,
+  // },
   title: {
     fontFamily: "Nunito",
     fontWeight: "bold",
     fontSize: "2rem",
-    color: "#fff",
+    color: "black",
   },
   desc: {
     fontFamily: "Nunito",
     fontSize: "1.4rem",
-    color: "#ddd",
+    color: "#124116",
   },
 });
 

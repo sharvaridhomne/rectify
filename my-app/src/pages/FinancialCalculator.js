@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     // display: "flex",
     minHeight: "100vh",
     // minwidth: "600vh",
-    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/home4.jpg"})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/home2.jpeg"})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover ",
   },

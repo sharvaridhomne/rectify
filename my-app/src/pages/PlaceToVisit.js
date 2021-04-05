@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     color: "rgba(236, 236, 236, 1)"
   },
   colorText2: {
-    color: "rgba(242, 120, 75, 1)",
+    color: "#5AFF3D",
   },
   container: {
     textAlign: "center",
