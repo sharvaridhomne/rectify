@@ -40,13 +40,6 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     fontSize: "4.5rem",
   },
-  // form: {
-  //   width: "100%", // Fix IE 11 issue.
-  //   marginTop: theme.spacing(3),
-  // },
-  // submit: {
-  //   margin: theme.spacing(3, 0, 2),
-  // },
 }));
 export default function PlaceToVisit2() {
   const classes = useStyles();
@@ -68,7 +61,6 @@ export default function PlaceToVisit2() {
         <br />
         <br />
         <br />
-       
 
         <div className={classes.container}>
           <Container
@@ -231,7 +223,7 @@ export default function PlaceToVisit2() {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography >
+                <Typography>
                   The entire process of interaction is generally slow and can
                   take time in months typically 2-3 months. The time taken can
                   be less if the issues are simpler in nature then may be couple
@@ -277,7 +269,7 @@ export default function PlaceToVisit2() {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography >
+                <Typography>
                   Once you receive the report, you could email us the report to:
                   <Link
                     href="https://reports@rectifycredit.com"
@@ -323,7 +315,7 @@ export default function PlaceToVisit2() {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
-                <Typography >
+                <Typography>
                   We respect our customers privacy and do not share your
                   information with any one unless you direct us to do so in
                   writing.
