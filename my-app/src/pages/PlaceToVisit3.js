@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   title: {
-    color: "rgba(242, 120, 75, 1)",
+    color: "#5AFF3D",
     fontSize: "4.5rem",
   },
 }));
