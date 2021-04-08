@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(3, 0, 2),
   },
 }));
-export default function () {
+export default function Placetovisit() {
   const classes = useStyles();
   const checked = useWindowPosition("header");
 

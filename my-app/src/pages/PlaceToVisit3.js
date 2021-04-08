@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-import useWindowPosition from "../Hooks/useWindowPosition";
+// import useWindowPosition from "../Hooks/useWindowPosition";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function PlaceToVisit1() {
   const classes = useStyles();
-  const checked = useWindowPosition("header");
+  // const checked = useWindowPosition("header");
 
   return (
     <div className={classes.root} id="place-to-visit3">

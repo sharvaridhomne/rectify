@@ -1,21 +1,18 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-
-import Box from "@material-ui/core/Box";
+// import Box from "@material-ui/core/Box";
 import Link from "@material-ui/core/Link";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-import useWindowPosition from "../Hooks/useWindowPosition";
+// import useWindowPosition from "../Hooks/useWindowPosition";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function PlaceToVisit2() {
   const classes = useStyles();
-  const checked = useWindowPosition("header");
+  // const checked = useWindowPosition("header");
 
   const preventDefault = (event) => event.preventDefault();
 

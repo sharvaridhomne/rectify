@@ -8,7 +8,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
-import useWindowPosition from "../Hooks/useWindowPosition";
+// import useWindowPosition from "../Hooks/useWindowPosition";
 // import { Collapse } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -17,9 +17,9 @@ const useStyles = makeStyles((theme) => ({
     // background: "rgba(0,0,0,0.9)",
     margin: "20px",
   },
-  title: {
-    fontSize: 14,
-  },
+  // title: {
+  //   fontSize: 14,
+  // },
   pos: {
     marginBottom: 12,
   },
@@ -38,9 +38,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function PlaceToVisit1() {
+export default function PlaceTovisit1() {
   const classes = useStyles();
-  const checked = useWindowPosition("header");
+  // const checked = useWindowPosition("header");
 
   return (
     // <Collapse in={checked} {...(checked ? { timeout: 1000 } : {})}>
