@@ -14,12 +14,16 @@ const backgroundShape = require("../images/shape.svg");
 const styles = (theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: "#f1f8e9",
+    // backgroundColor: "#f1f8e9",
     overflow: "hidden",
-    background: `url(${backgroundShape}) no-repeat`,
-    backgroundSize: "cover",
-    backgroundPosition: "0 400px",
-    paddingBottom: 200,
+    // background: `url(${backgroundShape}) no-repeat`,
+    // backgroundSize: "cover",
+    // backgroundPosition: "0 400px",
+    // paddingBottom: 200,
+    // minHeight: "100vh",
+    backgroundImage: `url(${process.env.PUBLIC_URL + "assets/calci1.png"})`,
+    // backgroundRepeat: "no-repeat",
+    // backgroundSize: "cover",
   },
 });
 
