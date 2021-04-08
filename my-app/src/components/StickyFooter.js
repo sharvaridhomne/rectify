@@ -7,11 +7,12 @@ import Link from '@material-ui/core/Link';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary">
-      {'Copyright © '}
-      <Link color="inherit" href=" ">
-      Safetynet Consultancy Pvt Ltd
-      </Link>{' '}
+    <Typography  color="white">
+      Copyright © 
+     {' '}
+      <Link href="#"  color="inherit">
+        {'Safetynet Consultancy Pvt Ltd'}
+      </Link>
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -32,7 +33,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     padding: theme.spacing(3, 2),
     marginTop: 'auto',
-    backgroundColor: "transparent" ,
+    backgroundColor: "black" ,
+    color: "white"
   },
 }));
 
@@ -54,7 +56,7 @@ export default function StickyFooter() {
       </Container> */}
       <footer className={classes.footer}>
         <Container maxWidth="sm">
-          <Typography variant="body1"></Typography>
+          <Typography ></Typography>
           <Copyright />
           
         </Container>
